@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 400px;
+    }
+
+    details {
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 10px 20px;
+      background-color: #f0f0f0;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+      transition: background-color 0.3s;
+      list-style: none;
+    }
+
+    summary::after {
+      content: "+";
+      padding-right: 5px;
+      position: absolute;
+      right: 20px;
+      transition: transform 0.3s;
+    }
+
+    details[open] summary::after {
+      content: "-";
+      transform: rotate(90deg);
+    }
+
+    details>div {
+      padding: 20px;
+      border-top: 1px solid #ccc;
+    }
+
+    summary:hover {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <details>
+      <summary>
+        TITULO
+      </summary>
+      <div>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+      </div>
+    </details>
+    <details>
+      <summary>
+        TITULO
+      </summary>
+      <div>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+      </div>
+    </details>
+    <details>
+      <summary>
+        TITULO
+      </summary>
+      <div>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+      </div>
+    </details>
+    <details>
+      <summary>
+        TITULO
+      </summary>
+      <div>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+      </div>
+    </details>
+    <details>
+      <summary>
+        TITULO
+      </summary>
+      <div>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+        <p>Contenido del detalle...</p>
+      </div>
+    </details>
+  </div>
+
+</body>
+
+</html>
